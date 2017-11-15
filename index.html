@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <title>Exercice 3 - Canvas</title>
+	</head>
+	<body>
+		<canvas id="mon_canvas" width="400" height="400"> 
+  			Texte alternatif pour les navigateurs ne supportant pas Canvas.
+		</canvas>
+		<script type="text/javascript">
+  			var c = document.getElementById("mon_canvas");
+ 			var ctx = c.getContext("2d");
+
+ 			//visage
+ 			ctx.beginPath();
+ 			ctx.arc(200,75,75,0,Math.PI*2,true);
+ 			ctx.fillStyle = "#976f0f";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.arc(175,75,12.5,0,Math.PI*2,true);
+ 			ctx.fillStyle = "white";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.arc(225,75,12.5,0,Math.PI*2,true);
+ 			ctx.fillStyle = "white";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(162.5,50);
+ 			ctx.quadraticCurveTo(175,37.5,187.5,50);
+ 			ctx.strokeStyle = "white";
+ 			ctx.stroke();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(212.5,50);
+ 			ctx.quadraticCurveTo(225,37.5,237.5,50);
+ 			ctx.strokeStyle = "white";
+ 			ctx.stroke();
+
+ 			//bras
+ 			ctx.beginPath();
+ 			ctx.moveTo(50,125);
+ 			ctx.lineTo(350,125);
+ 			ctx.lineTo(350,175);
+ 			ctx.lineTo(50,175);
+ 			ctx.fillStyle = "#976f0f";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(50,125);
+ 			ctx.quadraticCurveTo(5,150,50,175);
+ 			ctx.fillStyle = "#976f0f";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(350,125);
+ 			ctx.quadraticCurveTo(395,150,350,175);
+ 			ctx.fillStyle = "#976f0f";
+ 			ctx.fill();
+
+ 			//corps - Jambe gauche
+ 			ctx.beginPath();
+ 			ctx.moveTo(136,175);
+ 			ctx.lineTo(136,375);
+ 			ctx.lineTo(186,375);
+ 			ctx.lineTo(186,175);
+ 			ctx.fillStyle = "#976f0f";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(136,375);
+ 			ctx.quadraticCurveTo(161,400,186,375);
+ 			ctx.fillStyle = "#976f0f";
+ 			ctx.fill();
+
+ 			//corps - Jambe droite
+ 			ctx.beginPath();
+ 			ctx.moveTo(264,175);
+ 			ctx.lineTo(264,375);
+ 			ctx.lineTo(214,375);
+ 			ctx.lineTo(214,175);
+ 			ctx.fillStyle = "#976f0f";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(214,375);
+ 			ctx.quadraticCurveTo(239,400,264,375);
+ 			ctx.fillStyle = "#976f0f";
+ 			ctx.fill();
+
+ 			//corps - Entre-jambes
+ 			ctx.beginPath();
+ 			ctx.moveTo(186,175);
+ 			ctx.lineTo(186,325);
+ 			ctx.lineTo(214,325);
+ 			ctx.lineTo(214,175);
+ 			ctx.fillStyle = "#976f0f";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(186,325);
+ 			ctx.quadraticCurveTo(200,300,214,325);
+ 			ctx.fillStyle = "white";
+ 			ctx.fill();
+
+ 			//bouche
+ 			ctx.beginPath();
+ 			ctx.moveTo(175,112.5);
+ 			ctx.quadraticCurveTo(200,140,225,112.5);
+ 			ctx.strokeStyle = "red";
+ 			ctx.stroke();
+
+ 			ctx.beginPath();
+ 			ctx.moveTo(175,112.5);
+ 			ctx.quadraticCurveTo(200,120,225,112.5);
+ 			ctx.strokeStyle = "red";
+ 			ctx.stroke();
+
+ 			//boutons
+ 			ctx.beginPath();
+ 			ctx.arc(200,200,12,0,Math.PI*2,true);
+ 			ctx.fillStyle = "#7a2976";
+ 			ctx.fill();
+
+ 			ctx.beginPath();
+ 			ctx.arc(200,250,12,0,Math.PI*2,true);
+ 			ctx.fillStyle = "#7a2976";
+ 			ctx.fill();
+ 		</script>
+	</body>
+</html>
